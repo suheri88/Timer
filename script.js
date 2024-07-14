@@ -1,5 +1,4 @@
-const endDate = "15 July 2024 08:30:00 PM";
-
+const endDate = "14 July 2024 12:01:00 PM";
 document.getElementById("end-date").innerHTML = endDate;
 const inputs = document.querySelectorAll("input");
 
@@ -10,7 +9,11 @@ const clock = () => {
     // Calculating Differences Between endingDate & nowDate
     const diff = (endingDate - nowDate) / 1000;
 
-    if (diff < 0) return;
+    if (diff < 0) {
+        // Show the link when timer ends
+        document.getElementById("redirect-link").style.display = "block";
+        return;
+    }
 
     // convert into days
     inputs[0].value = Math.floor(diff / 3600 / 24);
@@ -19,7 +22,7 @@ const clock = () => {
     inputs[3].value = Math.floor(diff) % 60;
 }
 
-// inital call
+// Initial call
 clock();
 
 /* 
