@@ -13,10 +13,15 @@ body {
 .main {
     width: 100%;
     height: 100vh; /* Changed from 100vw to 100vh to cover the entire viewport height */
-    background-image: url('countdown.png');
+    background-image: url('../Assets/countdown.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 
 .overlay {
@@ -68,6 +73,12 @@ label {
     font-weight: bold;
 }
 
+
+#link {
+    color: black;
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     .main {
@@ -90,16 +101,16 @@ label {
 
     .cols .timer-box {
         width: 100%;
-        margin: 10px 0; /* Add margin for spacing */
+        margin: 5px 0; /* Add margin for spacing */
     }
 
     input {
-        width: 80%; /* Increase input width */
-        height: 40px; /* Reduce height */
-        font-size: 20px; /* Reduce font size */
+        width: 70%; /* Increase input width */
+        height: 30px; /* Reduce height */
+        font-size: 15px; /* Reduce font size */
     }
 
     label {
-        font-size: 16px; /* Reduce label font size */
+        font-size: 15px; /* Reduce label font size */
     }
 }
