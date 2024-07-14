@@ -13,7 +13,7 @@ body {
 .main {
     width: 100%;
     height: 100vw;
-    background-image: url('../Assets/countdown.png');
+    background-image: url('countdown.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
