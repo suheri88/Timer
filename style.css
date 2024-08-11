@@ -79,38 +79,34 @@ label {
 }
 
 
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    .main {
-        height: auto; /* Allow height to adjust based on content */
-    }
-
-    .overlay {
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.7); /* Increase opacity for better readability */
+ /* Media query for smartphones */
+ @media only screen and (max-width: 600px) {
+    .logo-container img {
+        width: 70px;
+        height: 55px;
+        margin: 0 5px;
     }
 
     .title {
-        font-size: 1.5em; /* Reduce font size */
+        font-size: 16px;
     }
 
     .cols {
-        flex-direction: column; /* Stack timer boxes vertically */
-        align-items: center; /* Center align items */
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
     }
 
-    .cols .timer-box {
+    .timer-box {
+        width: 70px; /* Reduce width of timer boxes */
+    }
+
+    .timer-box input {
         width: 100%;
-        margin: 5px 0; /* Add margin for spacing */
+        font-size: 14px; /* Reduce font size for inputs */
     }
 
-    input {
-        width: 70%; /* Increase input width */
-        height: 30px; /* Reduce height */
-        font-size: 15px; /* Reduce font size */
-    }
-
-    label {
-        font-size: 15px; /* Reduce label font size */
+    .timer-box label {
+        font-size: 12px; /* Reduce font size for labels */
     }
 }
